@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Lumière | 心とすごす、やさしい時間</title>
+<meta name="description" content="Cafe Lumière（カフェ・ルミエール）は、こだわりの自家焙煎コーヒーと手作りスイーツを楽しめる隠れ家カフェです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-cup">☕</div>
+</div>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="logo">Cafe <span>Lumière</span></a>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#about" class="nav-link">こだわり</a></li>
+        <li><a href="#menu" class="nav-link">メニュー</a></li>
+        <li><a href="#gallery" class="nav-link">ギャラリー</a></li>
+        <li><a href="#access" class="nav-link">アクセス</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">ご予約</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-reveal>
+      <p class="hero-sub">SINCE 2015 &mdash; SPECIALTY COFFEE &amp; SWEETS</p>
+      <h1 class="hero-title">香り立つ一杯と、<br>やさしい時間を。</h1>
+      <p class="hero-desc">自家焙煎の豆と季節の食材で作る、体にやさしいカフェメニュー。<br class="pc-only">忙しい日常から少し離れて、ゆったりとした時間をお過ごしください。</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">メニューを見る</a>
+        <a href="#contact" class="btn btn-outline">ご予約はこちら</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="下にスクロール"><span></span></a>
+  </section>
+
+  <section class="marquee">
+    <div class="marquee-track">
+      <span>SPECIALTY COFFEE ☕ HANDMADE SWEETS 🍰 COZY SPACE 🌿 FREE WIFI 💻 SPECIALTY COFFEE ☕ HANDMADE SWEETS 🍰 COZY SPACE 🌿 FREE WIFI 💻 </span>
+      <span aria-hidden="true">SPECIALTY COFFEE ☕ HANDMADE SWEETS 🍰 COZY SPACE 🌿 FREE WIFI 💻 SPECIALTY COFFEE ☕ HANDMADE SWEETS 🍰 COZY SPACE 🌿 FREE WIFI 💻 </span>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-text" data-reveal>
+        <p class="section-eyebrow">ABOUT US</p>
+        <h2 class="section-title">豆選びから焙煎まで、<br>すべてに理由があります。</h2>
+        <p class="about-desc">
+          Cafe Lumière（カフェ・ルミエール）では、世界各地の農園から直接買い付けた生豆を、
+          店内の小さな焙煎機で少量ずつ丁寧に焙煎しています。
+          スイーツも保存料を使わず、毎朝手作り。
+          コーヒー一杯、焼き菓子ひとつにも、私たちのこだわりが詰まっています。
+        </p>
+        <ul class="about-points">
+          <li><span class="point-icon">🌱</span><div><strong>自家焙煎</strong><p>毎日焙煎する新鮮な豆だけを使用</p></div></li>
+          <li><span class="point-icon">🧁</span><div><strong>手作りスイーツ</strong><p>保存料不使用、毎朝仕込みの焼き菓子</p></div></li>
+          <li><span class="point-icon">🛋️</span><div><strong>くつろぎの空間</strong><p>木のぬくもりを感じる隠れ家的空間</p></div></li>
+        </ul>
+      </div>
+      <div class="about-image" data-reveal>
+        <div class="about-image-frame"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-eyebrow">MENU</p>
+        <h2 class="section-title">人気のメニュー</h2>
+        <p class="section-desc">こだわりのドリンクとスイーツをご用意しています</p>
+      </div>
+
+      <div class="menu-tabs" data-reveal>
+        <button class="tab-btn active" data-tab="drink">DRINK</button>
+        <button class="tab-btn" data-tab="sweets">SWEETS</button>
+        <button class="tab-btn" data-tab="food">FOOD</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid" data-reveal>
+        <!-- JSで生成 -->
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-eyebrow">GALLERY</p>
+        <h2 class="section-title">店内の風景</h2>
+      </div>
+    </div>
+    <div class="gallery-grid" data-reveal>
+      <div class="gallery-item g1"></div>
+      <div class="gallery-item g2"></div>
+      <div class="gallery-item g3"></div>
+      <div class="gallery-item g4"></div>
+      <div class="gallery-item g5"></div>
+      <div class="gallery-item g6"></div>
+    </div>
+  </section>
+
+  <section class="voice" id="voice">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-eyebrow">VOICE</p>
+        <h2 class="section-title">お客様の声</h2>
+      </div>
+      <div class="voice-slider" data-reveal>
+        <div class="voice-track" id="voice-track">
+          <div class="voice-card">
+            <p class="voice-stars">★★★★★</p>
+            <p class="voice-text">「コーヒーの香りが本当に素晴らしく、一人の時間を贅沢に過ごせました。スタッフの方も親切で、また必ず来ます。」</p>
+            <p class="voice-name">— A.Kさん</p>
+          </div>
+          <div class="voice-card">
+            <p class="voice-stars">★★★★★</p>
+            <p class="voice-text">「焼き菓子が絶品！特にシナモンロールは他では食べられない美味しさです。内装もおしゃれで居心地が良いです。」</p>
+            <p class="voice-name">— M.Sさん</p>
+          </div>
+          <div class="voice-card">
+            <p class="voice-stars">★★★★★</p>
+            <p class="voice-text">「Wi-Fiも完備していて作業がはかどりました。落ち着いたBGMと香りに癒やされる隠れ家的カフェです。」</p>
+            <p class="voice-name">— T.Yさん</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="access" id="access">
+    <div class="container access-inner">
+      <div class="access-info" data-reveal>
+        <p class="section-eyebrow">ACCESS</p>
+        <h2 class="section-title">店舗情報</h2>
+        <dl class="info-list">
+          <div><dt>店名</dt><dd>Cafe Lumière（カフェ・ルミエール）</dd></div>
+          <div><dt>住所</dt><dd>〒150-0001 東京都渋谷区神宮前1-2-3 ルミエールビル1F</dd></div>
+          <div><dt>営業時間</dt><dd>平日 8:00〜20:00 / 土日祝 9:00〜21:00</dd></div>
+          <div><dt>定休日</dt><dd>毎週水曜日</dd></div>
+          <div><dt>電話番号</dt><dd>03-1234-5678</dd></div>
+          <div><dt>席数</dt><dd>28席（テラス席8席あり）</dd></div>
+        </dl>
+      </div>
+      <div class="access-map" data-reveal>
+        <iframe title="店舗マップ" src="https://maps.google.com/maps?q=%E6%B8%8B%E8%B0%B7%E9%A7%85&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="section-eyebrow">RESERVATION</p>
+        <h2 class="section-title">ご予約・お問い合わせ</h2>
+        <p class="section-desc">ご予約やご質問は下記フォームよりお気軽にご連絡ください</p>
+      </div>
+      <form class="contact-form" id="contact-form" data-reveal novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">お名前 <span class="required">必須</span></label>
+            <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+            <span class="error-msg" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス <span class="required">必須</span></label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            <span class="error-msg" id="email-error"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">ご希望日</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="form-group">
+            <label for="people">人数</label>
+            <select id="people" name="people">
+              <option value="1">1名</option>
+              <option value="2" selected>2名</option>
+              <option value="3">3名</option>
+              <option value="4">4名</option>
+              <option value="5+">5名以上</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">メッセージ</label>
+          <textarea id="message" name="message" rows="5" placeholder="ご質問・ご要望などございましたらご記入ください"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">送信する</button>
+        <p class="form-success" id="form-success">ご送信ありがとうございます。内容を確認の上、担当者よりご連絡いたします。</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <p class="logo footer-logo">Cafe <span>Lumière</span></p>
+      <p class="footer-desc">香り立つ一杯と、やさしい時間を。</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#about">こだわり</a>
+      <a href="#menu">メニュー</a>
+      <a href="#gallery">ギャラリー</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">ご予約</a>
+    </nav>
+    <div class="footer-sns">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="X">X</a>
+      <a href="#" aria-label="Facebook">FB</a>
+    </div>
+  </div>
+  <p class="footer-copy">&copy; 2026 Cafe Lumière. All Rights Reserved.</p>
+</footer>
+
+<button class="to-top" id="to-top" aria-label="ページの先頭へ戻る">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
