@@ -4,10 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cafe Lumière | 心とすごす、やさしい時間</title>
-<meta name="description" content="Cafe Lumière（カフェ・ルミエール）は、こだわりの自家焙煎コーヒーと手作りスイーツを楽しめる隠れ家カフェです。">
+<meta name="description" content="Cafe Lumière（カフェ・ルミエール）は、こだわりの自家焙煎コーヒーと手作りスイーツを楽しめる隠れ家カフェです。渋谷・神宮前で28席のゆったりとした空間をご用意しております。">
+<meta name="theme-color" content="#2c1e13">
+<link rel="canonical" href="https://example.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cafe Lumière">
+<meta property="og:title" content="Cafe Lumière | 心とすごす、やさしい時間">
+<meta property="og:description" content="自家焙煎コーヒーと手作りスイーツが楽しめる、渋谷・神宮前の隠れ家カフェ。">
+<meta property="og:image" content="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=1200&amp;h=630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&amp;family=Zen+Kaku+Gothic+New:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" fetchpriority="high"
+  imagesizes="100vw"
+  imagesrcset="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=800 800w,
+               https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=1200 1200w,
+               https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=1600 1600w,
+               https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=2000 2000w"
+  href="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=1600">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,15 +54,29 @@
 
 <main>
   <section class="hero" id="top">
-    <div class="hero-bg"></div>
+    <div class="hero-media">
+      <img
+        class="hero-img"
+        src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=1600"
+        srcset="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=800 800w,
+                https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=1200 1200w,
+                https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=1600 1600w,
+                https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=70&amp;w=2000 2000w"
+        sizes="100vw"
+        width="2000" height="1333"
+        alt="温かな光に包まれたテーブルで淹れたてのコーヒーと焙煎豆"
+        fetchpriority="high"
+        decoding="async">
+    </div>
     <div class="hero-overlay"></div>
+    <div class="hero-grain" aria-hidden="true"></div>
     <div class="hero-content" data-reveal>
-      <p class="hero-sub">SINCE 2015 &mdash; SPECIALTY COFFEE &amp; SWEETS</p>
+      <p class="hero-sub"><span class="hero-sub-line" aria-hidden="true"></span>SINCE 2015 &mdash; SPECIALTY COFFEE &amp; SWEETS</p>
       <h1 class="hero-title">香り立つ一杯と、<br>やさしい時間を。</h1>
       <p class="hero-desc">自家焙煎の豆と季節の食材で作る、体にやさしいカフェメニュー。<br class="pc-only">忙しい日常から少し離れて、ゆったりとした時間をお過ごしください。</p>
       <div class="hero-buttons">
-        <a href="#menu" class="btn btn-primary">メニューを見る</a>
-        <a href="#contact" class="btn btn-outline">ご予約はこちら</a>
+        <a href="#menu" class="btn btn-primary"><span>メニューを見る</span></a>
+        <a href="#contact" class="btn btn-outline"><span>ご予約はこちら</span></a>
       </div>
     </div>
     <a href="#about" class="scroll-down" aria-label="下にスクロール"><span></span></a>
@@ -54,6 +86,27 @@
     <div class="marquee-track">
       <span>SPECIALTY COFFEE ☕ HANDMADE SWEETS 🍰 COZY SPACE 🌿 FREE WIFI 💻 SPECIALTY COFFEE ☕ HANDMADE SWEETS 🍰 COZY SPACE 🌿 FREE WIFI 💻 </span>
       <span aria-hidden="true">SPECIALTY COFFEE ☕ HANDMADE SWEETS 🍰 COZY SPACE 🌿 FREE WIFI 💻 SPECIALTY COFFEE ☕ HANDMADE SWEETS 🍰 COZY SPACE 🌿 FREE WIFI 💻 </span>
+    </div>
+  </section>
+
+  <section class="stats" id="stats">
+    <div class="container stats-grid" data-reveal>
+      <div class="stat-item">
+        <p class="stat-num"><span class="stat-count" data-count="10">0</span><span class="stat-suffix">年</span></p>
+        <p class="stat-label">自家焙煎の歴史</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-num"><span class="stat-count" data-count="52000">0</span><span class="stat-suffix">+</span></p>
+        <p class="stat-label">累計ご来店数</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-num"><span class="stat-count" data-count="4.8" data-decimals="1">0.0</span></p>
+        <p class="stat-label">口コミ平均評価</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-num"><span class="stat-count" data-count="28">0</span><span class="stat-suffix">席</span></p>
+        <p class="stat-label">ゆったり客席数</p>
+      </div>
     </div>
   </section>
 
@@ -74,8 +127,19 @@
           <li><span class="point-icon">🛋️</span><div><strong>くつろぎの空間</strong><p>木のぬくもりを感じる隠れ家的空間</p></div></li>
         </ul>
       </div>
-      <div class="about-image" data-reveal>
-        <div class="about-image-frame"></div>
+      <div class="about-image" data-reveal="scale">
+        <div class="about-image-accent" aria-hidden="true"></div>
+        <div class="about-image-frame">
+          <img
+            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;q=70&amp;w=800&amp;h=1000"
+            srcset="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;q=70&amp;w=500&amp;h=625 500w,
+                    https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;q=70&amp;w=800&amp;h=1000 800w,
+                    https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;q=70&amp;w=1000&amp;h=1250 1000w"
+            sizes="(max-width: 960px) 80vw, 480px"
+            width="800" height="1000"
+            loading="lazy" decoding="async"
+            alt="一杯ずつ丁寧にハンドドリップでコーヒーを淹れる様子">
+        </div>
       </div>
     </div>
   </section>
@@ -107,13 +171,61 @@
         <h2 class="section-title">店内の風景</h2>
       </div>
     </div>
-    <div class="gallery-grid" data-reveal>
-      <div class="gallery-item g1"></div>
-      <div class="gallery-item g2"></div>
-      <div class="gallery-item g3"></div>
-      <div class="gallery-item g4"></div>
-      <div class="gallery-item g5"></div>
-      <div class="gallery-item g6"></div>
+    <div class="gallery-grid">
+      <figure class="gallery-item" data-reveal style="transition-delay:0s">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600"
+             srcset="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&amp;fit=crop&amp;q=65&amp;w=300&amp;h=300 300w,
+                     https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&amp;fit=crop&amp;q=65&amp;w=450&amp;h=450 450w,
+                     https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600 600w"
+             sizes="(max-width: 720px) 50vw, (max-width: 960px) 33vw, 16vw"
+             width="600" height="600" loading="lazy" decoding="async" alt="温もりある店内の様子">
+        <figcaption>店内の様子</figcaption>
+      </figure>
+      <figure class="gallery-item" data-reveal style="transition-delay:.05s">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600"
+             srcset="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;q=65&amp;w=300&amp;h=300 300w,
+                     https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;q=65&amp;w=450&amp;h=450 450w,
+                     https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600 600w"
+             sizes="(max-width: 720px) 50vw, (max-width: 960px) 33vw, 16vw"
+             width="600" height="600" loading="lazy" decoding="async" alt="バリスタが仕上げるラテアート">
+        <figcaption>ラテアート</figcaption>
+      </figure>
+      <figure class="gallery-item" data-reveal style="transition-delay:.1s">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600"
+             srcset="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&amp;fit=crop&amp;q=65&amp;w=300&amp;h=300 300w,
+                     https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&amp;fit=crop&amp;q=65&amp;w=450&amp;h=450 450w,
+                     https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600 600w"
+             sizes="(max-width: 720px) 50vw, (max-width: 960px) 33vw, 16vw"
+             width="600" height="600" loading="lazy" decoding="async" alt="厳選した自家焙煎コーヒー豆">
+        <figcaption>自家焙煎の豆</figcaption>
+      </figure>
+      <figure class="gallery-item" data-reveal style="transition-delay:.15s">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600"
+             srcset="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;q=65&amp;w=300&amp;h=300 300w,
+                     https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;q=65&amp;w=450&amp;h=450 450w,
+                     https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600 600w"
+             sizes="(max-width: 720px) 50vw, (max-width: 960px) 33vw, 16vw"
+             width="600" height="600" loading="lazy" decoding="async" alt="焼きたての自家製ペイストリー">
+        <figcaption>自家製ペイストリー</figcaption>
+      </figure>
+      <figure class="gallery-item" data-reveal style="transition-delay:.2s">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600"
+             srcset="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;q=65&amp;w=300&amp;h=300 300w,
+                     https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;q=65&amp;w=450&amp;h=450 450w,
+                     https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600 600w"
+             sizes="(max-width: 720px) 50vw, (max-width: 960px) 33vw, 16vw"
+             width="600" height="600" loading="lazy" decoding="async" alt="木のぬくもりを感じる客席">
+        <figcaption>木のぬくもり</figcaption>
+      </figure>
+      <figure class="gallery-item" data-reveal style="transition-delay:.25s">
+        <img src="https://images.unsplash.com/photo-1503481766315-7a586b20f66d?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600"
+             srcset="https://images.unsplash.com/photo-1503481766315-7a586b20f66d?auto=format&amp;fit=crop&amp;q=65&amp;w=300&amp;h=300 300w,
+                     https://images.unsplash.com/photo-1503481766315-7a586b20f66d?auto=format&amp;fit=crop&amp;q=65&amp;w=450&amp;h=450 450w,
+                     https://images.unsplash.com/photo-1503481766315-7a586b20f66d?auto=format&amp;fit=crop&amp;q=65&amp;w=600&amp;h=600 600w"
+             sizes="(max-width: 720px) 50vw, (max-width: 960px) 33vw, 16vw"
+             width="600" height="600" loading="lazy" decoding="async" alt="くつろぎのソファ席">
+        <figcaption>くつろぎ席</figcaption>
+      </figure>
     </div>
   </section>
 
